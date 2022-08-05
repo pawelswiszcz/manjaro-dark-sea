@@ -15,3 +15,5 @@ ln -s ~/.themes/manjaro-dark-sea/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
 ```
 
 <img src="assets/manjaro-dark-sea.png">
+
+Based on Matcha-dark-sea theme and Deepin buttons
