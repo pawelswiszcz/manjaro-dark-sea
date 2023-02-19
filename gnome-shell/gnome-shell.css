@@ -465,7 +465,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 6px;
   padding: 6px;
   margin: 0;
-  border-radius: 0;
+  border-radius: 15px;
   color: #aaaaaa !important;
 }
 
@@ -1438,7 +1438,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .quick-settings {
   padding: 12px !important;
-  border-radius: 5px !important;
+  border-radius: 15px !important;
   margin-top: 6px !important;
 }
 
@@ -1446,6 +1446,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   min-height: 20px;
   min-width: 20px;
   padding: 10.5px;
+  border-radius: 15px !important;
 }
 
 .quick-settings .icon-button {
@@ -1459,7 +1460,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .quick-toggle {
-  border-radius: 3px;
+  border-radius: 15px;
   min-width: 12em;
   max-width: 12em;
   min-height: 40px;
@@ -1593,13 +1594,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .quick-toggle-menu {
   background-color: #1b2224 !important;
   color: #dddddd !important;
-  border-radius: 5px !important;
+  border-radius: 15px !important;
   padding: 12px 0 !important;
   margin: 12px 18px 0 21px !important;
 }
 
 .quick-toggle-menu .popup-menu-item {
-  border-radius: 0 !important;
+  border-radius: 15 !important;
 }
 
 .quick-toggle-menu .popup-menu-item > StIcon {
