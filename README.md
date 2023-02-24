@@ -18,4 +18,7 @@ ln -s ~/.themes/manjaro-dark-sea/unite/manjaro-dark-sea ~/.local/share/gnome-she
 
 <img src="assets/manjaro-dark-sea.png">
 
+
+<img src="assets/manjaro-dark-sea-dock.png">
+
 Based on Matcha-dark-sea theme and Deepin buttons
