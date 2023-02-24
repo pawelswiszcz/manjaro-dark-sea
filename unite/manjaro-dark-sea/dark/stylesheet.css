@@ -1,0 +1,61 @@
+.window-button .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.window-button{
+  color: #dddddd;
+  -natural-hpadding: 12px;
+  -minimum-hpadding: 6px;
+  transition-duration: 150ms;
+  text-shadow: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-right: 5px;
+  padding-left: 10px !important;
+  padding-right: 10px;
+}
+
+.close:hover, .minimize:hover, .maximize:hover{
+   background-color: rgba(0, 0, 0, 0.8);
+   box-shadow: inset 0 -2px #248a76;
+   text-shadow: 2px 2px 4px #000000;
+}
+
+.close .icon {
+  background-image: url("close.svg");
+}
+
+
+.close:hover .icon {
+  background-image: url("close.svg");
+}
+
+.close:active .icon {
+  background-image: url("close.svg");
+}
+
+.minimize .icon {
+  background-image: url("minimize.svg");
+}
+
+.minimize:hover .icon {
+  background-image: url("minimize.svg");
+}
+
+.minimize:active .icon {
+  background-image: url("minimize.svg");
+}
+
+.maximize .icon {
+  background-image: url("maximize.svg");
+}
+
+.maximize:hover .icon {
+  background-image: url("maximize.svg");
+}
+
+.maximize:active .icon {
+  background-image: url("maximize.svg");
+}
