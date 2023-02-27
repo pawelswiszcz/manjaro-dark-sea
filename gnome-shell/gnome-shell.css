@@ -33,7 +33,7 @@ stage {
 .workspace-switcher-container, .switcher-list, .resize-popup, .osd-window {
   color: #efefef;
   background-color: #222a2d;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 12px;
 }
 
@@ -44,7 +44,7 @@ stage {
 
 .app-well-app .overview-icon,
 .grid-search-result .overview-icon, .dash-item-container .show-apps .overview-icon, .list-search-result, .search-provider-icon {
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 6px;
   border: 2px solid transparent;
   transition-duration: 100ms;
@@ -192,21 +192,21 @@ stage {
 }
 
 .modal-dialog .modal-dialog-linked-button:first-child, .hotplug-notification-item:first-child, .notification-banner .notification-button:first-child {
-  border-radius: 0 0 0 5px !important;
+  border-radius: 0 0 0 10px !important;
 }
 
 .modal-dialog .modal-dialog-linked-button:last-child, .hotplug-notification-item:last-child, .notification-banner .notification-button:last-child {
   border-right-width: 0;
-  border-radius: 0 0 5px 0 !important;
+  border-radius: 0 0 10px 0 !important;
 }
 
 .modal-dialog .modal-dialog-linked-button:first-child:last-child, .hotplug-notification-item:first-child:last-child, .notification-banner .notification-button:first-child:last-child {
-  border-radius: 0 0 5px 5px !important;
+  border-radius: 0 0 10px 10px !important;
 }
 
 .popup-menu-content, .candidate-popup-content {
   background-color: #1b2224 !important;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   border: solid #101415;
   border-width: 1px;
