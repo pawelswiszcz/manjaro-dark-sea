@@ -5964,10 +5964,6 @@ windowcontrols button.minimize,
 windowcontrols button.minimize:hover,
 windowcontrols button.minimize:active,
 windowcontrols button.minimize:active:hover {
-  padding: -3px;
-  margin: -3px;
-  min-width: 40px;
-  min-height: 40px;
   color: transparent;
   background-color: transparent;
   background-position: center;

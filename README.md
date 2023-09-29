@@ -12,7 +12,7 @@ Gnome Shell theme. Supports Gnome 41, 42 and 43
 cd ~/.themes
 git clone https://github.com/pawelswiszcz/manjaro-dark-sea.git
 ln -s ~/.themes/manjaro-dark-sea/gtk-4.0/assets ~/.config/gtk-4.0/assets
-ln -s ~/.themes/manjaro-dark-sea/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk.css
+ln -s ~/.themes/manjaro-dark-sea/gtk.css ~/.config/gtk-4.0/gtk.css
 ln -s ~/.themes/manjaro-dark-sea/unite/manjaro-dark-sea ~/.local/share/gnome-shell/extensions/unite@hardpixel.eu/themes/manjaro-dark-sea
 ```
 
