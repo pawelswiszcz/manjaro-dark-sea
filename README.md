@@ -1,6 +1,6 @@
 # manjaro-dark-sea
 
-Gnome Shell theme. Supports Gnome 41, 42 and 43
+Gnome Shell theme. Supports Gnome 43
 
 # installation
 
