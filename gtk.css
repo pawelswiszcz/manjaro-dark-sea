@@ -17,8 +17,8 @@
 @define-color window_fg_color #273134;
 @define-color view_bg_color #ffffff;
 @define-color view_fg_color #303d41;
-@define-color headerbar_bg_color #1b2224;
-@define-color headerbar_fg_color #c6cdcb;
+@define-color headerbar_bg_color #f6f5f4;
+@define-color headerbar_fg_color #121718;
 @define-color headerbar_border_color #121718;
 @define-color headerbar_backdrop_color #1b2224;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.07);
@@ -77,89 +77,164 @@
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
 
+switch slider {
+    background-color: #f6f6f6;
+}
+switch {
+    background-color: #a9a9a9;
+}
+switch:checked {
+    background-color: @accent_bg_color;
+}
+checkbutton check:checked {
+    color: #363636;
+    background-color:@accent_bg_color;
+}
+scale highlight {
+    background-color: @accent_color;
+}
+scale slider {
+    background-color: @accent_color;
+}
+list row.activatable:selected {
+    color: @accent_fg_color;
+    background-color: @accent_bg_color;
+}
+window {
+    border-radius: 5px;
+}
+
+windowcontrols {
+  border-spacing: 6px;
+}
+
+windowcontrols:not(.empty).start:dir(ltr),
+windowcontrols:not(.empty).end:dir(rtl) {
+  margin-right: 7px;
+}
+
+windowcontrols:not(.empty).start:dir(rtl),
+windowcontrols:not(.empty).end:dir(ltr) {
+  margin-left: 7px;
+}
+
 windowcontrols button {
+  margin: 0;
+  padding: 0;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
 }
 
-windowcontrols image {
-  min-width: 30px;
-  min-height: 28px;
+windowcontrols button.close,
+windowcontrols button.close:hover,
+windowcontrols button.close:active,
+windowcontrols button.close:active:hover,
+windowcontrols button.maximize,
+windowcontrols button.maximize:hover,
+windowcontrols button.maximize:active,
+windowcontrols button.maximize:active:hover,
+windowcontrols button.minimize,
+windowcontrols button.minimize:hover,
+windowcontrols button.minimize:active,
+windowcontrols button.minimize:active:hover {
+  padding: -3px;
+  margin: -3px;
+  min-width: 40px;
+  min-height: 40px;
   color: transparent;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
   border-width: 0;
-  padding-top: -20px;
-  padding-left: 0px;
 }
 
-windowcontrols image {
- 
-}
-windowcontrols image:hover {
-   background-color: transparent;
-}
-windowcontrols image:active {
-  
-}
-window {
-    border-radius: 10px;
-}
-
-
-windowcontrols button.close:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.minimize:backdrop {
+windowcontrols button.close:backdrop,
+windowcontrols button.maximize:backdrop,
+windowcontrols button.minimize:backdrop {
   opacity: 1;
 }
 
 windowcontrols button.close {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-dark.png"), url("assets/titlebutton-close-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png"));
 }
 
 windowcontrols button.close:backdrop {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop-dark.png"), url("assets/titlebutton-close-backdrop-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop.png"), url("assets/titlebutton-close-backdrop@2.png"));
 }
 
 windowcontrols button.close:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-hover.png"), url("assets/titlebutton-close-hover@2.png"));
 }
 
 windowcontrols button.close:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-close-active.png"), url("assets/titlebutton-close-active@2.png"));
 }
 
 windowcontrols button.maximize {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-dark.png"), url("assets/titlebutton-maximize-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize.png"), url("assets/titlebutton-maximize@2.png"));
 }
 
 windowcontrols button.maximize:backdrop {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop-dark.png"), url("assets/titlebutton-maximize-backdrop-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-backdrop.png"), url("assets/titlebutton-maximize-backdrop@2.png"));
 }
 
 windowcontrols button.maximize:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover-dark.png"), url("assets/titlebutton-maximize-hover-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-hover.png"), url("assets/titlebutton-maximize-hover@2.png"));
 }
 
 windowcontrols button.maximize:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-maximize-active-dark.png"), url("assets/titlebutton-maximize-active-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-maximize-active.png"), url("assets/titlebutton-maximize-active@2.png"));
 }
 
 windowcontrols button.minimize {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-dark.png"), url("assets/titlebutton-minimize-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize.png"), url("assets/titlebutton-minimize@2.png"));
 }
 
 windowcontrols button.minimize:backdrop {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop-dark.png"), url("assets/titlebutton-minimize-backdrop-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-backdrop.png"), url("assets/titlebutton-minimize-backdrop@2.png"));
 }
 
 windowcontrols button.minimize:hover {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover-dark.png"), url("assets/titlebutton-minimize-hover-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-hover.png"), url("assets/titlebutton-minimize-hover@2.png"));
 }
 
 windowcontrols button.minimize:active {
-  background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png"));
+  background-image: -gtk-scaled(url("assets/titlebutton-minimize-active.png"), url("assets/titlebutton-minimize-active@2.png"));
 }
 
+windowcontrols button.restore {
+  background-image: -gtk-scaled(url("assets/unmaximize_normal.png"), url("assets/unmaximize_normal@2.png"));
+}
 
+windowcontrols button.restore:backdrop {
+  background-image: -gtk-scaled(url("assets/unmaximize-normal-backdrop.png"), url("assets/unmaximize-normal-backdrop@2.png"));
+}
 
+windowcontrols button.restore:hover {
+  background-image: -gtk-scaled(url("assets/unmaximize_hover.png"), url("assets/unmaximize_hover.png@2.png"));
+}
+
+windowcontrols button.restore:active {
+  background-image: -gtk-scaled(url("assets/unmaximize_hover.png"), url("assets/unmaximize_hover.png@2.png"));
+}
+
+.fullscreen windowcontrols button.maximize,
+.maximized windowcontrols button.maximize {
+  background-image: -gtk-scaled(url("assets/unmaximize_normal.png"), url("assets/unmaximize_normal@2.png"));
+}
+
+.fullscreen windowcontrols button.maximize:backdrop,
+.maximized windowcontrols button.maximize:backdrop {
+  background-image: -gtk-scaled(url("assets/unmaximize-normal-backdrop.png"), url("assets/unmaximize-normal-backdrop.png@2.png"));
+}
+
+.fullscreen windowcontrols button.maximize:hover,
+.maximized windowcontrols button.maximize:hover {
+  background-image: -gtk-scaled(url("assets/unmaximize_hover.png"), url("assets/unmaximize_hover.png@2.png"));
+}
+
+.fullscreen windowcontrols button.maximize:active,
+.maximized windowcontrols button.maximize:active {
+  background-image: -gtk-scaled(url("assets/unmaximize_press.png"), url("assets/unmaximize_press.png@2.png"));
+}
